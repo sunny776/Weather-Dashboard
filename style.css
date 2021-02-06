@@ -1,0 +1,50 @@
+.Dashboard{
+
+background-color: rgb(24, 45, 116);
+text-align: center;
+padding: 10px;
+color: white;
+margin: 15px;
+border-radius: 25px;
+}
+
+
+body {
+    background-color: lightblue;
+  }
+
+.sideBar{
+
+background-color: rgb(24, 45, 116);
+text-align: center;
+border-radius: 25px;
+margin: 15p;
+color: white;
+}
+
+
+.mainArea{
+    background-color: rgb(24, 45, 116);
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    margin-right: 0px;
+    margin-left: 80px;
+
+
+
+    }
+.daily{
+    background-color: rgb(24, 45, 116);
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    margin: 10px;
+
+}
+
+.bottomBar{
+    margin-left:150px ;
+}

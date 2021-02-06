@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  
+
+  <body>
+
+    <!-- HEADER-->
+    <header class="Dashboard">
+      <h1>Weather Dashboard</h1>
+    </header>
+
+<!--BODY CONTAINER-->
+<div class="container row">
+    <!--SIDE BAR-->
+    <div class="sideBar col-3">
+      <br>
+      <h4>Search for a city:</h4><br>
+      <div class='input-group'>
+        <input id="userInput" type="text" class="form-control" placeholder="Enter The Name Of The City">
+        <button id="button" type="btn btn-primary"><i class="fa fa-search"></i></button>
+      </div>
+
+    </div>
+
+
+    <!-- MAIN AREA-->
+          <div class=" col-9">
+            <!--AREA FOR CITY AND WEATHER-->
+            <div class = "row">
+              <div class = "mainArea col-12">
+                <h3 id="cityName" ></h3>
+                <h4 id="Date"></h4>
+                <p id="temperature">Temperature: </p>
+                <p id="humidity">Humidity: </p>
+                <p id="windSpeed">Wind: </p>
+                <p id="uvIndex">UV Index: </p>
+              </div>
+            </div>
+
+
+
+          
+          <!--FIVE DAY WEATHER-->
+          
+              <div class=" bottomBar row">
+
+                <div class = "daily col-2">
+                  <div id = "dayOne"> 
+                  <p id="dayOneDate"></p>
+                  <p id="dayOneTemp">Temp:  </p>
+                  <p id="dayOneHumidity">Humidity:  </p>
+                  </div>
+                </div>
+
+                <div class = "daily col-2">
+                  <div id = "dayTwo"> 
+                  <p id="dayTwoDate"></p>
+                  <p id="dayTwoTemp">Temp:  </p>
+                  <p id="dayTwoHumidity">Humidity:  </p>
+                  </div>
+                </div>
+
+
+                <div class = "daily col-2">
+                  <div id = "dayThree"> 
+                  <p id="dayThreeDate"></p>
+                  <p id="dayThreeTemp">Temp:  </p>
+                  <p id="dayThreeHumidity">Humidity:  </p>
+                  </div>
+                </div>
+
+                <div class = "daily col-2">
+                  <div id = "dayFour"> 
+                  <p id="dayFourDate"></p>
+                  <p id="dayFourTemp">Temp:  </p>
+                  <p id="dayFourHumidity">Humidity:  </p>
+                  </div>
+                </div>
+
+                <div class = "daily col-2">
+                  <div id = "dayFive"> 
+                  <p id="dayFiveDate"></p>
+                  <p id="dayFiveTemp">Temp: </p>
+                  <p id="dayFiveHumidity">Humidity: </p>
+                  </div>
+                </div>  
+                  
+              </div>
+</div>
+    <script src="./script.js"></script>
+    <script src="./moment.min.js"></script>
+
+  
+
+
+  </body>
+</html>
